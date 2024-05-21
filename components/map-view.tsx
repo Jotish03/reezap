@@ -1,40 +1,19 @@
 import React from "react";
-import MapView, { Marker } from "react-native-maps";
+import { View } from "react-native";
+import Mapbox from "@rnmapbox/maps";
 
-interface MapComponentProps {
-  latitude: number;
-  longitude: number;
-  latitudeDelta: number;
-  longitudeDelta: number;
-  title: string;
-  description: string;
-}
+Mapbox.setAccessToken(
+  "sk.eyJ1IjoicmVlemFwZGV2IiwiYSI6ImNsd2diY2F1ZzAxc2sya3BsNG14aDZzOGYifQ.ivK9oFTKpLD9SRK75ns3iQ"
+);
 
-const MapComponent: React.FC<MapComponentProps> = ({
-  latitude,
-  longitude,
-  latitudeDelta,
-  longitudeDelta,
-  title,
-  description,
-}) => {
+const MapViewComponent = () => {
   return (
-    <MapView
-      style={{ height: 300 }}
-      initialRegion={{
-        latitude,
-        longitude,
-        latitudeDelta,
-        longitudeDelta,
-      }}
-    >
-      <Marker
-        coordinate={{ latitude, longitude }}
-        title={title}
-        description={description}
-      />
-    </MapView>
+    <View className="flex-1 mb-4 ">
+      <View className="h-full w-full ">
+        <Mapbox.MapView className="flex-1 " />
+      </View>
+    </View>
   );
 };
 
-export default MapComponent;
+export default MapViewComponent;

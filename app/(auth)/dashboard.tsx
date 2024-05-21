@@ -14,6 +14,7 @@ import { useNavigation } from "@react-navigation/native";
 import { NavigationProp } from "@react-navigation/native";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import { images } from "@/constants";
+import MapViewComponent from "@/components/map-view";
 
 const Dashboard = () => {
   const navigation = useNavigation<NavigationProp<any>>();
@@ -68,7 +69,7 @@ const Dashboard = () => {
             </Text>
           </View>
 
-          <Image source={images.map} className="w-full h-1/2 rounded-lg mb-8" />
+          <MapViewComponent />
 
           <View className="flex-row justify-between mb-6">
             <TouchableOpacity className="bg-gray-800 p-4 rounded-lg flex-1 mr-2 items-center">
