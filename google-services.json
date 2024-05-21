@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "565392138146",
-    "project_id": "reezap-dbs-d4c74",
-    "storage_bucket": "reezap-dbs-d4c74.appspot.com"
+    "project_number": "930076823842",
+    "project_id": "reezap-db",
+    "storage_bucket": "reezap-db.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:565392138146:android:3de3d451bd8dcc2fad1cfb",
+        "mobilesdk_app_id": "1:930076823842:android:1ef28d7dfe698da3cc557b",
         "android_client_info": {
           "package_name": "com.reezapdev.reezap"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDyufWPb0riV1k-0-SckTP63ZgkdBxcZoA"
+          "current_key": "AIzaSyDtUtOuSGDCB8c27yyoVT1rEBPQr4HLjl4"
         }
       ],
       "services": {

@@ -5,7 +5,6 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-
     "scheme": "reezap",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -31,8 +30,10 @@
     },
     "plugins": [
       "expo-router",
-
-      ["@react-native-firebase/app", "@react-native-firebase/auth"]
+      [
+        "@react-native-firebase/app",
+        "@react-native-firebase/auth"
+      ]
     ],
     "experiments": {
       "typedRoutes": true
@@ -42,7 +43,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "15021d2a-18d1-41e2-9bd3-f759d6988822"
+        "projectId": "a870e0de-641c-4df3-8f83-67be2345b117"
       }
     }
   }
