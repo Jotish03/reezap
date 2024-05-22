@@ -15,6 +15,7 @@ import { NavigationProp } from "@react-navigation/native";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import { images } from "@/constants";
 import MapViewComponent from "@/components/map-view";
+import BottomNav from "@/components/bottom-nav/bottomnav";
 
 const Dashboard = () => {
   const navigation = useNavigation<NavigationProp<any>>();
@@ -53,8 +54,9 @@ const Dashboard = () => {
 
   return (
     <>
-      <View></View>
-      <SafeAreaView className="flex-1 bg-white mt-8">
+      <MapViewComponent />
+
+      <SafeAreaView className=" mt-[-30px]">
         <ScrollView
           contentContainerStyle={{
             flexGrow: 1,
@@ -68,8 +70,6 @@ const Dashboard = () => {
               Welcome, {username}
             </Text>
           </View>
-
-          <MapViewComponent />
 
           <View className="flex-row justify-between mb-6">
             <TouchableOpacity className="bg-gray-800 p-4 rounded-lg flex-1 mr-2 items-center">

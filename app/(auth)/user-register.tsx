@@ -40,7 +40,7 @@ const UserRegister = () => {
       await retryFirestoreOperation(() =>
         firestore().collection("users").doc(uid).set({ name, email, username })
       );
-      navigation.navigate("dashboard");
+      navigation.navigate("main-screen");
     } catch (error) {
       if (error instanceof Error) {
         console.log(error.message);

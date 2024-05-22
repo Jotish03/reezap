@@ -78,7 +78,7 @@ const UserLogin = () => {
         );
 
         if (userDocument.exists) {
-          navigation.navigate("dashboard");
+          navigation.navigate("main-screen");
         } else {
           navigation.navigate("user-register", { uid: user?.uid });
         }
