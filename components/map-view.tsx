@@ -56,7 +56,7 @@ const MapViewComponent = () => {
   }, [userLocation]);
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1 }} className="bg-white">
       <Mapbox.MapView
         style={{ flex: 1, marginBottom: 20 }}
         styleURL={StyleURL.Street}
